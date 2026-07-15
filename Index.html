@@ -63,7 +63,7 @@
             color: #333;
             outline: none;
             margin-bottom: 20px;
-            box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
         }
 
@@ -83,13 +83,13 @@
             font-weight: 600;
             cursor: pointer;
             transition: all 0.2s ease-in-out;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
 
         button:hover {
             background: #f0f0f0;
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
         }
 
         button:active {
@@ -108,8 +108,15 @@
 
         /* Simple animation for when the result appears */
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
@@ -140,7 +147,6 @@
                     Years--;
                     Months += 12;
                 }
-                
 
                 document.getElementById('result').textContent = `Your age is: ${Years} years, ${Months} months, and ${Days} days.`;
             }
